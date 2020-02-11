@@ -46,7 +46,7 @@ public class AreaManager : MonoBehaviour
             Destroy(gameObject);
     }
     #endregion
-    
+
     public static bool GetArea(Vector3 searchedPosition, out Area findedArea)
     {
         foreach (var area in instance.areas)
@@ -59,6 +59,16 @@ public class AreaManager : MonoBehaviour
         }
 
         findedArea = new Area();
+        return false;
+    }
+
+    public static bool GetArea(Vector3 searchedPosition, int areaIndex)
+    {
+        if (instance.areas[areaIndex].areaBounds.Contains(searchedPosition))
+        {
+            return true;
+        }
+
         return false;
     }
 

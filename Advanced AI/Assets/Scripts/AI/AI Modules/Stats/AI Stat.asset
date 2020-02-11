@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d49b25dae16a3e48a63e7235ee71700, type: 3}
   m_Name: AI Stat
   m_EditorClassIdentifier: 
-  walkSpeed: 0
-  runSpeed: 0
+  walkSpeed: 5
+  runSpeed: 10
   myJob: 0
   workingStation: {fileID: 0}
   hungerThreshold: 50

@@ -11,7 +11,7 @@ public class DebugAction : AiAction
     public override void Act(AiController controller)
     {
         //Debug.Log(debugText);
-        if(controller.stateTimer > 5)
+        if(controller.StateTimer > 5)
         {
             controller.myActualSatiety = 100;
             controller.myActualStamina = 100;

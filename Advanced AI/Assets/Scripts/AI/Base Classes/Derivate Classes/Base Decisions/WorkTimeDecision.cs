@@ -19,6 +19,8 @@ public class WorkTimeDecision : AiDecision
             case DayPhase.Noon:
             case DayPhase.Afternoon:
             case DayPhase.Dusk:
+                if(controller.myActualStamina < 100 || controller.myActualSatiety < 100)
+                    return false;
                 return true;
         }
     }

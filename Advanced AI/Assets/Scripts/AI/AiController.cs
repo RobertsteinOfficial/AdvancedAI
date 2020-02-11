@@ -9,8 +9,12 @@ public class AiController : MonoBehaviour
     public AiState actualState;
     public float myActualStamina = 100;
     public float myActualSatiety = 100;
+
+    [Header("Routine")]
     public GameObject[] workingPositions;
-    [HideInInspector] public float stateTimer = 0;
+    public GameObject eatPosition;
+    public GameObject sleepPosition;
+    public float StateTimer { get; set; }
 
     //LOCAL
     bool playerIsInSight = false;
@@ -25,11 +29,11 @@ public class AiController : MonoBehaviour
 
     void Update()
     {
-        stateTimer += Time.deltaTime;
+        StateTimer += Time.deltaTime;
         actualState.UpdateState(this);
 
         //MOCKUP
-        if(playerIsInSight)
+        if (playerIsInSight)
             Debug.Log(EvaluateSight());
     }
     #endregion
@@ -42,7 +46,7 @@ public class AiController : MonoBehaviour
     public void ChangeState(AiState newState)
     {
         if (newState != actualState)
-            stateTimer = 0;
+            StateTimer = 0;
         actualState = newState;
     }
 

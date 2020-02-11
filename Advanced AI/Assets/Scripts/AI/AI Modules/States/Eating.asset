@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Eating
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 11400000, guid: a35b2e9aed87f4b4b928755132371360, type: 2}
+  - {fileID: 11400000, guid: 2deae8bff4528c949b92afa1664bf971, type: 2}
   transitions:
   - transitionName: to sleep
     decision: {fileID: 11400000, guid: 81039786a0fbaf148b736acc95e57133, type: 2}
