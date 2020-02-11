@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 883239619013ca14787c5deed1a99116, type: 3}
+  m_Name: Minding my own business
+  m_EditorClassIdentifier: 
+  actions: []
+  transitions:
+  - transitionName: to work
+    decision: {fileID: 11400000, guid: d134b37dbfc5d5948864217577c34338, type: 2}
+    trueState: {fileID: 11400000, guid: 53bfcd9859f329c489946fbb4ccfc5fa, type: 2}
+    falseState: {fileID: 11400000}
+  - transitionName: to eat
+    decision: {fileID: 11400000, guid: c8eef82cfddbf834ebe7966fb19ef6e5, type: 2}
+    trueState: {fileID: 11400000, guid: 9c7b808185678c5418c10e5fa79041df, type: 2}
+    falseState: {fileID: 11400000}
+  - transitionName: to sleep
+    decision: {fileID: 11400000, guid: 81039786a0fbaf148b736acc95e57133, type: 2}
+    trueState: {fileID: 11400000, guid: f30c566f8175c7e4b95d5d4a1ee7b041, type: 2}
+    falseState: {fileID: 11400000}
